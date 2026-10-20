@@ -102,6 +102,8 @@ Minimum = 0ms, Maximum = 0ms, Average = 0ms
 
 [PC1 Ping]
 
+<img width="700" height="660" alt="Screenshot 2026-10-20 at 5 43 19 PM" src="https://github.com/user-attachments/assets/b8b8db5b-f738-479a-8d2b-5a8ef8f02dc5" />
+
 Packets:Sent = 4, Received = 4, Lost = 0 (0% loss)
 Minimum = 0ms, Maximum = 0ms, Average = 0ms
 
@@ -119,7 +121,7 @@ Minimum = 0ms, Maximum = 0ms, Average = 0ms
 
 [PC2 Ping]
 
-<img width="675" height="435" alt="Screenshot 2026-08-17 at 12 58 36 AM" src="https://github.com/user-attachments/assets/d67bdc66-bcf7-493b-b71c-3e71255703c1" />
+<img width="700" height="663" alt="Screenshot 2026-10-20 at 5 41 53 PM" src="https://github.com/user-attachments/assets/72134eed-cca2-4e7d-8fe6-da296c45b673" />
 
 Packets:Sent = 4, Received = 4, Lost = 0 (0% loss)
 Minimum = 0ms, Maximum = 0ms, Average = 0ms
