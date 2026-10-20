@@ -13,6 +13,7 @@ Design and implement a basic Local Area Network (LAN) with a dedicated DHCP serv
 ## Network Topology
 
 [Topology]
+
 <img width="567" height="484" alt="DHCP Topology" src="https://github.com/user-attachments/assets/518f1cbe-dd42-44c8-90c8-6fd94bb1ca1b" />
 
 **Device used:**
