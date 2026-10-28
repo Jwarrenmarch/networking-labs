@@ -61,7 +61,7 @@ The DHCP server was assigned a static IP address (192.168.1.2) to ensure its add
 - **Service:** On (FastEthernet0)
 
 
-The DHCP service was enabled on the server and configured with a pool named serverPool. All hosts on the network were set to receive their IP configuration automatically via DHCP rather than being manually configured.
+The DHCP service was enabled on the server and configured with a pool named serverDHCPPool. All hosts on the network were set to receive their IP configuration automatically via DHCP rather than being manually configured.
 
 
 ## Host Configuration - DHCP Enabled
