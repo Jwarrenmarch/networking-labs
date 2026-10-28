@@ -21,11 +21,11 @@ Design and implement a basic Local Area Network (LAN) with a dedicated DHCP serv
 **Devices used:**
 
 - 1 x Server-PT(DHCP server) - static IP, outside LAN boundary
-- 
+  
 - 1 x Cisco 2960-24TT Switch(Switch0)
-- 
+  
 - 3 x PC-PT (PC0, PC1, PC2)
-- 
+  
 - 1 x Laptop-PT (Laptop0)
 
 All end devices were connected to Switch0 via FastEthernet interfaces. The DHCP server was connected directly to Switch0, serving the entire MY_LAN network.
