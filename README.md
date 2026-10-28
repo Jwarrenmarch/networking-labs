@@ -13,7 +13,7 @@ lease release/renew, ifconfig and ping verification, troubleshooting an address 
 
 ## Tools
 
--Ciso Packet Tracer
+- Ciso Packet Tracer
 
 ## About
 
