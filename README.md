@@ -6,7 +6,7 @@ A portfolio of hands-on networking labs built with Cisco Packet Tracer, document
 
 |Project| Skills Demonstrated| Status
 
-[01 - Basic LAN with DHCP](01-basic-lan-dhcp) | DHCP server configuration, IP addressing,
+[01 - Basic LAN with DHCP](basic-lan-dhcp.md) | DHCP server configuration, IP addressing,
 lease release/renew, ifconfig and ping verification, troubleshooting an address conflict|Complete|
 
 |02 - VLAN Segmentation | VLANs, trunking| In progress|
