@@ -18,7 +18,7 @@ Design and implement a basic Local Area Network (LAN) with a dedicated DHCP serv
 
 <img width="567" height="484" alt="DHCP Topology" src="https://github.com/user-attachments/assets/518f1cbe-dd42-44c8-90c8-6fd94bb1ca1b" />
 
-**Device used:**
+**Devices used:**
 1 x Server-PT(DHCP server) - static IP, outside LAN boundary
 1 x Cisco 2960-24TT Switch(Switch0)
 3 x PC-PT (PC0, PC1, PC2)
@@ -30,13 +30,13 @@ All end devices were connected to Switch0 via FastEthernet interfaces. The DHCP 
 
 |Device: DHCP Server | IP Address: 192.168.1.2 |Assignment Method: Static | Subnet Mask: 255.255.255.0 |Default Gateway: - |Default DNS: - |
 
-|Device: PC0 | IP Address: 192.168.1.x |Assignment Method: DHCP | Subnet Mask: 255.255.255.0 |Default Gateway: 192.168.1.1 |Default DNS: 192.168.1.2 |
+|Device: PC0 | IP Address: 192.168.1.11 |Assignment Method: DHCP | Subnet Mask: 255.255.255.0 |Default Gateway: 192.168.1.1 |Default DNS: 192.168.1.2 |
 
-|Device: PC1 | IP Address: 192.168.1.x |Assignment Method: DHCP | Subnet Mask: 255.255.255.0 |Default Gateway: 192.168.1.1 |Default DNS: 192.168.1.2|
+|Device: PC1 | IP Address: 192.168.1.12 |Assignment Method: DHCP | Subnet Mask: 255.255.255.0 |Default Gateway: 192.168.1.1 |Default DNS: 192.168.1.2|
 
-|Device: PC2 | IP Address: 192.168.1.x |Assignment Method: DHCP | Subnet Mask: 255.255.255.0 |Default Gateway: 192.168.1.1|Default DNS: 192.168.1.2 |
+|Device: PC2 | IP Address: 192.168.1.13 |Assignment Method: DHCP | Subnet Mask: 255.255.255.0 |Default Gateway: 192.168.1.1|Default DNS: 192.168.1.2 |
 
-|Device: Laptop0 | IP Address: 192.168.1.x |Assignment Method: DHCP | Subnet Mask: 255.255.255.0 |Default Gateway: 192.168.1.1 |Default DNS: 192.168.1.2 |
+|Device: Laptop0 | IP Address: 192.168.1.14 |Assignment Method: DHCP | Subnet Mask: 255.255.255.0 |Default Gateway: 192.168.1.1 |Default DNS: 192.168.1.2 |
 
 
 The DHCP server was assigned a static IP address (192.168.1.2) to ensure its address never changes, which is standard practice in real networks where servers require a consistent, known address.
@@ -52,7 +52,7 @@ The DHCP server was assigned a static IP address (192.168.1.2) to ensure its add
 
 <img width="697" height="694" alt="Screenshot 2026-10-27 at 5 36 23 PM" src="https://github.com/user-attachments/assets/bd0a6e7c-d522-440f-895d-983012230fa2" />
 
-- **Pool Name:** serverPool
+- **Pool Name:** serverDHCPPool
 - **Default Gateway:** 192.168.1.1
 - **DNS Server:** 192.168.1.2
 - **Start IP Address:** 192.168.1.10
@@ -66,7 +66,7 @@ The DHCP service was enabled on the server and configured with a pool named serv
 
 ## Host Configuration - DHCP Enabled
 
-All four end devices were configured to obtain their IP addresses automatically via DHCP. Each host released its previous lease (`ipconfig /release`), requested a new one (`ipconfig /renew`), and was then checked with `ipconfig`
+All four end devices were configured to obtain their IP addresses automatically via DHCP. Each host released its previous lease (`ipconfig /release`), requested a new one (`ipconfig /renew`), and was then checked with `ipconfig`.
 
 [PC0 Config]
 
@@ -81,7 +81,7 @@ PC0 - DHCP enabled, receiving Default Gateway 192.168.1.1 and DNS server 192.168
 PC0 - `ipconfig` showing DHCP-assigned IPv4 address 192.168.1.11, subnet mask 255.255.255.0, and default gateway 192.168.1.1.
 
 
-[PC 1 Config]
+[PC1 Config]
 
 <img width="698" height="701" alt="Screenshot 2026-08-17 at 12 43 14 AM" src="https://github.com/user-attachments/assets/f9cdba4f-5141-4759-be09-bfb40a7dfde6" />
 
