@@ -39,11 +39,14 @@ All end devices were connected to Switch0 via FastEthernet interfaces. The DHCP 
 
 The DHCP server was assigned a static IP address (192.168.1.2) to ensure its address never changes, which is standard practice in real networks where servers require a consistent, known address.
 
+[DHCP Server Static IP]
+<img width="698" height="701" alt="Screenshot 2026-08-17 at 12 39 40 AM" src="https://github.com/user-attachments/assets/b28f8b78-acf6-42dc-b242-eb59c780d63c" />
+
+
 ## DHCP Server Configuration
 
 [DHCP Config]
-
-<img width="698" height="701" alt="Screenshot 2026-08-17 at 12 41 10 AM" src="https://github.com/user-attachments/assets/21f438ce-bad8-4778-99c2-5555a77de823" />
+<img width="697" height="694" alt="Screenshot 2026-10-27 at 5 36 23 PM" src="https://github.com/user-attachments/assets/bd0a6e7c-d522-440f-895d-983012230fa2" />
 
 - **Pool Name:** serverPool
 - **Default Gateway:** 192.168.1.1
@@ -68,6 +71,7 @@ All four end devices were configured to obtain their IP addresses automatically 
 PC0 - DHCP enabled, receiving Default Gateway 192.168.1.1 and DNS server 192.168.1.2.
 
 [PC0 ipconfig]
+<img width="697" height="694" alt="Screenshot 2026-10-27 at 5 40 21 PM" src="https://github.com/user-attachments/assets/88d80775-61af-4ce5-9578-f33ae15e887f" />
 
 PC0 - `ipconfig` showing DHCP-assigned IPv4 address 192.168.1.11, subnet mask 255.255.255.0, and default gateway 192.168.1.1.
 
@@ -79,6 +83,7 @@ PC0 - `ipconfig` showing DHCP-assigned IPv4 address 192.168.1.11, subnet mask 25
 PC1 - DHCP enabled, receiving correct gateway and DNS settings.
 
 [PC1 ipconfig]
+<img width="697" height="694" alt="Screenshot 2026-10-27 at 5 41 36 PM" src="https://github.com/user-attachments/assets/26484dfb-c3fc-4b1f-a2e2-80d0842f91b4" />
 
 PC1 - `ipconfig` showing DHCP-assigned IPv4 address 192.168.1.12, subnet mask 255.255.255.0, and default gateway 192.168.1.1.
 
@@ -90,6 +95,7 @@ PC1 - `ipconfig` showing DHCP-assigned IPv4 address 192.168.1.12, subnet mask 25
 PC2 - DHCP enabled, confirmed receiving network settings.
 
 [PC2 ipconfig]
+<img width="697" height="694" alt="Screenshot 2026-10-27 at 5 43 57 PM" src="https://github.com/user-attachments/assets/cc540164-b274-45dd-a2b4-c374cabde39f" />
 
 PC2 - `ipconfig` showing DHCP-assigned IPv4 address 192.168.1.13, subnet mask 255.255.255.0, and default gateway 192.168.1.1.
 
@@ -101,6 +107,7 @@ PC2 - `ipconfig` showing DHCP-assigned IPv4 address 192.168.1.13, subnet mask 25
 Laptop0 - DHCP enabled, confirmed receiving network settings.
 
 [Laptop0 ipconfig]
+<img width="697" height="694" alt="Screenshot 2026-10-27 at 5 45 01 PM" src="https://github.com/user-attachments/assets/08d021ce-a62a-4eb0-b140-4df98deaf036" />
 
 Laptop0 - `ipconfig` showing DHCP-assigned IPv4 address 192.168.1.14, subnet mask 255.255.255.0, and default gateway 192.168.1.1.
 
@@ -112,8 +119,8 @@ Ping tests were conducted between hosts to confirm successful DHCP assignment an
 
 
 [PC0 Ping]
+<img width="697" height="694" alt="Screenshot 2026-10-27 at 5 46 24 PM" src="https://github.com/user-attachments/assets/68b96cd1-97d1-401b-a186-4bc8e5bddfc6" />
 
-<img width="681" height="589" alt="Screenshot 2026-08-17 at 1 00 54 AM" src="https://github.com/user-attachments/assets/29edb5df-3dc4-4de9-b42b-8aaaaa884ab9" />
 
 - Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)
 - Minimum = 0ms, Maximum = 1ms, Average = 0ms
@@ -122,8 +129,8 @@ Ping tests were conducted between hosts to confirm successful DHCP assignment an
 **PC1 -> 192.168.1.11 (PC0)**
 
 [PC1 Ping]
+<img width="697" height="694" alt="Screenshot 2026-10-27 at 5 47 39 PM" src="https://github.com/user-attachments/assets/178358a4-8886-4650-b21f-3c1b12729ba1" />
 
-<img width="700" height="660" alt="Screenshot 2026-10-20 at 5 43 19 PM" src="https://github.com/user-attachments/assets/b8b8db5b-f738-479a-8d2b-5a8ef8f02dc5" />
 
 - Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)
 - Minimum = 0ms, Maximum = 0ms, Average = 0ms
@@ -133,7 +140,8 @@ Ping tests were conducted between hosts to confirm successful DHCP assignment an
 
 [Laptop0 Ping]
 
-<img width="681" height="567" alt="Screenshot 2026-08-17 at 1 00 11 AM" src="https://github.com/user-attachments/assets/c2c917cc-2a5b-490f-bea1-796c0490ab87" />
+<img width="697" height="694" alt="Screenshot 2026-10-27 at 5 49 06 PM" src="https://github.com/user-attachments/assets/a82da0a1-c825-4130-8080-06bc02ba1f54" />
+
 
 - Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)
 - Minimum = 0ms, Maximum = 0ms, Average = 0ms
@@ -141,8 +149,8 @@ Ping tests were conducted between hosts to confirm successful DHCP assignment an
 **PC2 -> 192.168.1.14 (Laptop0)**
 
 [PC2 Ping]
+<img width="697" height="694" alt="Screenshot 2026-10-27 at 5 50 41 PM" src="https://github.com/user-attachments/assets/f4b00c57-315f-40bd-ab54-16b9b6adf88e" />
 
-<img width="700" height="663" alt="Screenshot 2026-10-20 at 5 41 53 PM" src="https://github.com/user-attachments/assets/72134eed-cca2-4e7d-8fe6-da296c45b673" />
 
 - Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)
 - Minimum = 0ms, Maximum = 0ms, Average = 0ms
